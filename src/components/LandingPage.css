@@ -1,0 +1,53 @@
+.container {
+    background-color: #404eed;
+}
+
+.container .coverImages {
+    display: flex;
+}
+
+.container .coverImages .left {
+    width: 30%;
+    margin-top: 10%;
+}
+
+.container .coverImages .center {
+    width: 50%;
+}
+
+.container .coverImages .right {
+    width: 40%;
+    margin-top: 25%;
+}
+.dlogo {
+    height: 70%;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    margin-left: 10%;
+
+}
+
+.list {
+    display: flex;
+    margin-left: 15%;
+}
+
+.brand {
+    display: flex;
+}
+.textLogo {
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
