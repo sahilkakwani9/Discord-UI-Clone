@@ -1,53 +1,476 @@
-.container {
-    background-color: #404eed;
+
+.cover {
+    position: relative;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.container .coverImages {
-    display: flex;
+.phoneh1 {
+    display: none;
 }
 
-.container .coverImages .left {
-    width: 30%;
-    margin-top: 10%;
-}
-
-.container .coverImages .center {
-    width: 50%;
-}
-
-.container .coverImages .right {
-    width: 40%;
-    margin-top: 25%;
-}
-.dlogo {
-    height: 70%;
+.cover .mid-content{
+    position: absolute;
+    top: 22.5vh;
+    left: 22vw;
+    /* display: flex; */
     color: #ffffff;
 }
 
-.navbar {
+.cover .mid-content .headline {
+    font-family: Ginto;
+    font-size: 250%;
+}
+.cover .mid-content .paragraph {
+    position: relative;
+    bottom: 2vh;
+}
+.cover .mid-content p {
+    font-family: Whitney;
+    font-size: 120%;
+    margin-top: -0.8vh;
+}
+
+.cover .mid-content .psecond {
+    position: relative;
+    left: -2vw;
+}
+
+.cover .mid-content .pthird {
+    position: relative;
+    left: 14vw;
+}
+
+.cover .mid-content .hero-btn {
+    margin-left: 6%;
+    margin-top: -1%;
+    
+}
+.cover .mid-content .hero-btn .btn {
+    position: relative;
+    padding: 2.7% 6%;
+    border-radius: 80px;
+    border-style: none;
+    font-family: Whitney;
+    font-size: large;
+    
+}
+
+.cover .mid-content .hero-btn .download {
+    padding-left: 9%;
+}
+.cover .mid-content .hero-btn .open {
+    margin-left: 3%;
+    background-color: #23272a;
+    color: #ffffff;
+    font-family: Whitney;
+}
+
+.cover .mid-content .hero-btn .download:hover {
+    color: #5865f2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.14);
+}
+
+.cover .mid-content .hero-btn .open:hover {
+    background-color: #36393f;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.14);
+}
+
+.cover .mid-content .hero-btn .download-img {
+    /* display: inline; */
+    position: absolute;
+    top: 34%;
+    left: 12%;
+    /* margin-top: 2%; */
+    width: 1.5vw;
+}
+
+.container .navbar {
     display: flex;
-    margin-left: 10%;
+    margin-left: 3%;
+}
+.container .navbar-container {
+    position: absolute;
+    background-color: #404eed;
+    color: #ffffff;
+    margin-top: 2.5%;
+    width: 100%;
+}
+
+.container .coverImages .left {
+    width: 55%;
+    position: absolute;
+    left: -32%;
+    margin-top: 21.5%;
+    /* overflow: hidden; */
+}
+
+.container .coverImages .right {
+    /* width: 50%; */
+    /* border: 10px solid black; */
+    max-width: 21%;
+    position: absolute;
+    left: 79%;
+    margin-top: 20.8%;
+    /* overflow: hidden; */
+}
+
+.container .center {
+    position: absolute;
+    margin-top: -0.5%;
+    left: -51%;
+    max-width: 151%;
+    /* max-height: 101vh; */
+    /* overflow: hidden; */
+    background-color: #404eed;
+    
+}
+
+
+
+
+.dlogo {
+    width: 50%;
+    position: relative;
+    bottom: 32%;
 
 }
 
-.list {
+
+.navbar .list {
     display: flex;
-    margin-left: 15%;
+    margin-left: 18%;
+}
+
+.list li:hover {
+    text-decoration: underline;
+}
+
+.login{
+    position: absolute;
+    left: 92%;
+    bottom: 44%;
+    background-color: #ffffff;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* display: inline-block; */
+    padding: 0.9% 1.3%;
+    /* margin-left: 90%; */
+    border-radius: 18px;
+    border-style: hidden;
+}
+
+.login:hover {
+    opacity: 1;
+    color: #5865f2;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.14);
 }
 
 .brand {
     display: flex;
 }
+
 .textLogo {
     align-items: center;
+    font-family: Ginto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 li {
     list-style-type: none;
-    margin-right: 20px;
+    margin-right: 15%;
 }
 
 a {
     text-decoration: none;
     color: #ffffff;
+}
+.Body .invite {
+    margin-top: 10%;
+    display: flex;
+}
+.Body .invite-img {
+    width: 55%;
+    margin-left: 3%;
+}
+.Body .invite-text {
+    position: absolute;
+    width: 29%;
+    left: 68%;
+    top: 118%;
+}
+.Body .invite h2 {
+    font-size: 300%;
+    line-height: 1.2;
+}
+.Body .invite p {
+    margin-top: -1%;
+    font-family: WhitneyL;
+    font-size: 130%;
+    line-height: 1.5;
+}
+
+.Body .easy {
+    margin-top: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    background-color: #f6f6f6;
+}
+.Body .easy-img {
+    width: 55%;
+    margin-left: 8%;
+}
+.Body .easy-text {
+    /* position: absolute;
+    width: 29%;
+    left: 68%;
+    top: 118%; */
+    margin-left: 4%;
+    margin-top: 3%;
+    width: 30%;
+}
+.Body .easy h2 {
+    font-size: 300%;
+    line-height: 1.2;
+}
+.Body .easy p {
+    margin-top: -1%;
+    font-family: WhitneyL;
+    font-size: 130%;
+    line-height: 1.5;
+}
+
+.Body .fandom {
+    margin-top: 10%;
+    display: flex;
+    padding-bottom: 10%;
+}
+.Body .fandom-img {
+    width: 55%;
+    margin-left: 3%;
+    /* margin-top: -2%; */
+}
+.Body .fandom-text {
+    /* position: absolute; */
+    width: 40%;
+    margin-top: 3%;
+    margin-left: 9%;
+}
+.Body .fandom h2 {
+    font-size: 300%;
+    line-height: 1.2;
+}
+.Body .fandom p {
+    margin-top: -3%;
+    font-family: WhitneyL;
+    font-size: 130%;
+    line-height: 1.5;
+}
+
+.Body .chillin {
+    padding-top: 5%;;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.Body .chillin-img {
+    margin-left: 2%;
+    width: 95%;
+}
+
+.Body .chillin h2 {
+    font-size: 265%;
+    font-family: Ginto;
+}
+.Body .chillin p {
+    margin-top: -1%;
+    font-family: WhitneyL;
+    font-size: 125%;
+    width: 75%;
+    margin-left: 12%;
+}
+.Body .chillin .chillin-foot {
+    position: relative;
+    margin-top: 8%;
+    padding-bottom: 10%;
+}
+
+.Body .chillin .chillin-foot .chillin-foot-img img {
+    position: absolute;
+    width: 42%;
+    left: 30%;
+    top: -20%;
+}
+
+.Body .chillin .chillin-foot h3 {
+    font-size: 200%;
+}
+
+.Body .chillin .chillin-foot .download {
+    position: relative;
+    border-radius: 80px;
+    padding: 1.3%;
+    padding-right: 3%;
+    padding-left: 5%;
+    border-style: none;
+    font-family: Whitney;
+    font-size: larger;
+    background-color: #5865f2;
+    color: #ffffff;
+}
+
+.Body .chillin .chillin-foot .download-img {
+    width: 1.5vw;
+    position: absolute;
+    left: 12%;
+    top: 30%;
+}
+.footer {
+    padding-top: 0.5%;
+    background-color: #23272a;
+    padding-bottom: 5%;
+    /* padding-bottom: 5%; */
+}
+.footer .main {
+    display: flex;
+    margin-top: 4%;
+}
+.footer .main h3 {
+    font-size: 200%;
+    font-family: Ginto;
+    color: #5865f2;
+    line-height: 100%;
+    margin-top: 7%;
+}
+.footer .main .lang {
+    display: flex;
+    color: #ffffff;
+    margin-top: -10%;
+}
+
+.footer .main .flag {
+    width: 8%;
+    height: 8%;
+    margin-top: 7%;
+    margin-right: 4%;
+}
+
+.footer .main ul .socials{
+    display: inline-flex;
+    margin-left: -15%;
+    margin-top: 2%;
+}
+
+.footer .main ul ul li{
+    margin-right: 30%;
+}
+
+
+.footer .main .foot-list {
+    color: #ffffff;
+    display: flex;
+    line-height: 200%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.footer .main .foot-list ul {
+    margin-right: 15%;
+}
+
+
+.footer .main .foot-list .list:hover {
+    text-decoration: underline;
+}
+
+.footer .main .Top-foot {
+    color: #5865f2;
+}
+
+
+.footer .rule {
+    border: 0.9px solid #5865f2;
+    background-color: #5865f2;
+    width: 94%;
+    margin-top: 1%;
+}
+
+.footer .foot-end {
+    /* display: flex; */
+    position: relative;
+}
+.footer .foot-brand {
+    display: flex;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.footer .dlogof{
+    width: 4.5%;
+    fill: #23272a;
+}
+
+.footer .textLogof{
+    font-family: Ginto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-top: 1.4%;
+    font-size: 110%;
+}
+
+.footer .signup {
+    position: absolute;
+    bottom: 20%;
+    right: 3%;
+    background-color: #5865f2;
+    color: #f6f6f6;
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* display: inline-block; */
+    padding: 0.9% 1.3%;
+    /* margin-left: 90%; */
+    border-radius: 18px;
+    border-style: hidden;
+}
+ 
+/*Responsive CSS */
+@media only screen and (max-width: 700px) {
+    .phoneh1 {
+        display: block;
+    }
+    .cover {
+        display: none;
+    }
+    .Body {
+        display: none;
+    }
+    .footer {
+        display: none;
+    }
+}
+
+@font-face {
+    font-family: 'Whitney';
+    src: local('Whitney'), url(../fonts/whitney-medium.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Ginto';
+    src: local('Ginto'), url(../fonts/ABCGintoNord-Bold-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'GintoU';
+    src: local('GintoU'), url(../fonts/ABCGintoNord-Ultra-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'GintoR';
+    src: local('GintoR'), url(../fonts/ABCGintoNord-Regular-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'GintoM';
+    src: local('GintoM'), url(../fonts/ABCGintoNord-Medium-Trial.otf) format('truetype');
+}
+
+@font-face {
+    font-family: 'WhitneyL';
+    src: local('WhitneyL'), url(../fonts/whitney-light.otf) format('truetype');
 }
