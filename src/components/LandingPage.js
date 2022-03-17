@@ -1,67 +1,37 @@
 import React from "react";
-import Logo from "../icons/discordLogo.svg";
-import Download from "../icons/download-icon.png";
-import "../../node_modules/font-awesome/css/font-awesome.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-import Limage from "../icons/left_bg_landing_header.svg";
-import Rimage from "../icons/right_bg_landing_header.svg";
-import Mimage from "../icons/center_bg_landing_header.svg";
-import Invite from "../icons/invite_only_landing.svg";
-import Easy from "../icons/hanging_out_easy_landing.svg";
-import Fandom from "../icons/fandom_landing.svg";
-import Chillin from "../icons/just_chiling_landing.svg";
-import ChillinStars from "../icons/tiny_stars_landing.svg";
-import Flag from "../icons/usa_flag.png";
-import Instagram from "../icons/instagram_icon.svg";
-import Facebook from "../icons/facebook_icon.svg";
-import Twitter from "../icons/twitter_icon.svg";
-import Youtube from "../icons/youtube_icon.svg";
+import '../../node_modules/font-awesome/css/font-awesome.css';
 import "./LandingPage.css";
 
 export default function LandingPage() {
   return (
     <div className="container">
-      <h1 className="phoneh1">Responsive Design in Construction.</h1>
       <div className="cover">
         <div className="center images">
-          <img src={Mimage} alt="center-landing" />
+          <img src={'./icons/center_bg_landing_header.svg'} alt="center-landing" />
         </div>
         <div className="navbar-container">
           <nav className="navbar">
             <a href="#landingPage" className="brand">
-              <img className="dlogo" src={Logo} alt="Discord-logo" />
+              <img className="dlogo" src="./icons/discordLogo.svg" alt="Discord-logo" />
               <span className="textLogo">Discord</span>
             </a>
             <div className="list">
-              <li>
-                <a href="#download">Download</a>
-              </li>
-              <li>
-                <a href="#nitro">Nitro</a>
-              </li>
-              <li>
-                <a href="#safety">Safety</a>
-              </li>
-              <li>
-                <a href="#support">Support</a>
-              </li>
-              <li>
-                <a href="#blog">Blog</a>
-              </li>
-              <li>
-                <a href="#careers">Careers</a>
-              </li>
+              <li><a href="#download">Download</a></li>
+              <li><a href="#nitro">Nitro</a></li>
+              <li><a href="#safety">Safety</a></li>
+              <li><a href="#support">Support</a></li>
+              <li><a href="#blog">Blog</a></li>
+              <li><a href="#careers">Careers</a></li>
             </div>
           </nav>
           <button className="login">Login</button>
         </div>
         <div className="coverImages">
           <div className="left images">
-            <img src={Limage} alt="left-landing" />
+            <img src='./icons/left_bg_landing_header.svg' alt="left-landing" />
           </div>
           <div className="right images">
-            <img src={Rimage} alt="right-landing" />
+            <img src='./icons/right_bg_landing_header.svg' alt="right-landing" />
           </div>
         </div>
         <div className="mid-content">
@@ -70,60 +40,41 @@ export default function LandingPage() {
               <h2>IMAGINE A PLACE...</h2>
             </div>
             <div className="paragraph">
-              <p className="pfirst">
-                ...where you can belong to a school club, a gaming group, or a
-                worldwide art community.{" "}
-              </p>
-              <p className="psecond">
-                Where just you and a handful of friends can spend time together.
-                A place that makes it easy
-              </p>
-              <p className="pthird">
-                to talk every day and hang out more often.
-              </p>
+              <p className="pfirst">...where you can belong to a school club, a gaming group, or a worldwide art community. </p>
+              <p className="psecond">Where just you and a handful of friends can spend time together. A place that makes it easy</p>
+              <p className="pthird">to talk every day and hang out more often.</p>
+            </div>
+            <div className="paragraph-mob">
+              <p>...where you can belong to a school club, a gaming group, or a worldwide art communityWhere just you and a handful of friends can spend time together. A place that makes it easy. to talk every day and hang out more often.</p>  
             </div>
           </div>
           <div className="hero-btn">
-            <button className="download btn">
-              <img src={Download} alt="" className="download-img" />{" "}
-              <span className="btn-txt">Download for Windows</span>{" "}
-            </button>
+            <button className="download btn"><img src="./icons/download-icon.png" alt="" className="download-img"/> <span className="btn-txt">Download for Windows</span> </button>
             <button className="open btn">Open Discord in your browser</button>
           </div>
         </div>
       </div>
       <div className="Body">
         <div className="invite">
-          <img src={Invite} alt="invite-img" className="invite-img" />
+          <img src="./icons/invite_only_landing.svg" alt="invite-img" className="invite-img"/>
           <div className="invite-text">
             <h2>Create an invite-only place where you belong</h2>
-            <p>
-              Discord servers are organized into topic-based channels where you
-              can collaborate, share, and just talk about your day without
-              clogging up a group chat.
-            </p>
+            <p>Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
           </div>
         </div>
         <div className="easy">
+          <img src="./icons/hanging_out_easy_landing.svg" alt="easy-img" className="easy-img-mob"/>
           <div className="easy-text">
             <h2>Where hanging out is easy</h2>
-            <p>
-              Grab a seat in a voice channel when you’re free. Friends in your
-              server can see you’re around and instantly pop in to talk without
-              having to call.
-            </p>
+            <p>Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
           </div>
-          <img src={Easy} alt="easy-img" className="easy-img" />
+          <img src="./icons/hanging_out_easy_landing.svg" alt="easy-img" className="easy-img"/>
         </div>
         <div className="fandom">
-          <img src={Fandom} alt="fandom-img" className="fandom-img" />
+          <img src="./icons/fandom_landing.svg" alt="fandom-img" className="fandom-img"/>
           <div className="fandom-text">
             <h2>From few to a fandom</h2>
-            <p>
-              Get any community running with moderation tools and custom member
-              access. Give members special powers, set up private channels, and
-              more.
-            </p>
+            <p>Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
           </div>
         </div>
         <div className="chillin">
@@ -135,14 +86,14 @@ export default function LandingPage() {
               up and have a drawing session with screen share.
             </p>
           </div>
-          <img src={Chillin} alt="chillin-img" className="chillin-img" />
+          <img src="./icons/just_chiling_landing.svg" alt="chillin-img" className="chillin-img" />
           <div className="chillin-foot">
             <div className="chillin-foot-img">
-              <img src={ChillinStars} alt="chillin-foot-img" />
+              <img src="../icons/tiny_stars_landing.svg" alt="chillin-foot-img" />
             </div>
             <h3>Ready to start your journey?</h3>
             <button className="download btn">
-              <img src={Download} alt="" className="download-img" />{" "}
+              <img src="./icons/download-icon.png" alt="" className="download-img" />{" "}
               <span className="btn-txt">Download for Windows</span>{" "}
             </button>
           </div>
@@ -156,7 +107,7 @@ export default function LandingPage() {
             </li>
             <li>
               <div className="lang">
-                <img src={Flag} className="flag" alt="flag-img" />
+                <img src="./icons/usa_flag.png" className="flag" alt="flag-img" />
                 <p>English, USA</p>
               </div>
             </li>
@@ -176,51 +127,55 @@ export default function LandingPage() {
                   </svg>
                 </li>
                 <li>
-                  <img src={Instagram} alt="insta-icn" />
+                  <img src="./icons/instagram_icon.svg" alt="insta-icn" />
                 </li>
                 <li>
-                  <img src={Facebook} alt="fb-icn" />
+                  <img src="./icons/facebook_icon.svg" alt="fb-icn" />
                 </li>
                 <li>
-                  <img src={Youtube} alt="yt-icn" />
+                  <img src="./icons/youtube_icon.svg" alt="yt-icn" />
                 </li>
               </ul>
             </li>
           </ul>
           <div className="foot-list">
-            <ul>
-              <li className="Top-foot">Product</li>
-              <li className="list">Download</li>
-              <li className="list">Nitro</li>
-              <li className="list">Status</li>
-            </ul>
-            <ul>
-              <li className="Top-foot">Company</li>
-              <li className="list">About</li>
-              <li className="list">Jobs</li>
-              <li className="list">Branding</li>
-              <li className="list">Newsroom</li>
-            </ul>
-            <ul>
-              <li className="Top-foot">Resources</li>
-              <li className="list">College</li>
-              <li className="list">Support</li>
-              <li className="list">Safety</li>
-              <li className="list">Blog</li>
-              <li className="list">Feedback</li>
-              <li className="list">Developers</li>
-              <li className="list">StreamKit</li>
-            </ul>
-            <ul>
-              <li className="Top-foot">Policies</li>
-              <li className="list">Terms</li>
-              <li className="list">Privacy</li>
-              <li className="list">Cookie Settings</li>
-              <li className="list">Guidelines</li>
-              <li className="list">Acknowledgements</li>
-              <li className="list">Licenses</li>
-              <li className="list">Moderation</li>
-            </ul>
+            <div className="mob-list">
+              <ul>
+                <li className="Top-foot">Product</li>
+                <li className="list">Download</li>
+                <li className="list">Nitro</li>
+                <li className="list">Status</li>
+              </ul>
+              <ul>
+                <li className="Top-foot">Company</li>
+                <li className="list">About</li>
+                <li className="list">Jobs</li>
+                <li className="list">Branding</li>
+                <li className="list">Newsroom</li>
+              </ul>
+            </div>
+            <div className="mob-list">
+              <ul>
+                <li className="Top-foot">Resources</li>
+                <li className="list">College</li>
+                <li className="list">Support</li>
+                <li className="list">Safety</li>
+                <li className="list">Blog</li>
+                <li className="list">Feedback</li>
+                <li className="list">Developers</li>
+                <li className="list">StreamKit</li>
+              </ul>
+              <ul>
+                <li className="Top-foot">Policies</li>
+                <li className="list">Terms</li>
+                <li className="list">Privacy</li>
+                <li className="list">Cookie Settings</li>
+                <li className="list">Guidelines</li>
+                <li className="list">Acknowledgements</li>
+                <li className="list">Licenses</li>
+                <li className="list">Moderation</li>
+              </ul>
+            </div>
           </div>
         </div>
         <hr className="rule" />
